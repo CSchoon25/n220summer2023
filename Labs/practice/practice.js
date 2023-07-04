@@ -1,17 +1,32 @@
+let xPos = 0;
+let yPos = 0;
+let xSpeed = 1;
+let ySpeed = 1;
+
 function setup() {
-    var red = "#FF0000"
+    createCanvas(400, 300);
+}
 
-    createCanvas(800, 600)
-    noStroke()
+function draw() {
+    background(62, 237, 108)
+    xPos = xPos + xSpeed;
+    yPos = yPos + ySpeed;
 
-    background(237, 210, 135)
+    fill(19, 71, 26)
 
-    fill(111, 208, 232)
-    rect(30, 60, 300, 150)
+    if(keyIsDown(65)) {
+        xSpeed = -1;
+    }
+    if(keyIsDown(68)) {
+        xSpeed = 1
+    }
+    if(keyIsDown(87)) {
+        ySpeed = -1;
+    }
+    if(keyIsDown(83)) {
+        ySpeed = 1
+    }
 
-    fill(200, 0, 0)
-    circle(100, 100, 30)
 
-    stroke(2)
-    line(0, 500, 200, 20)
+    circle(xPos, yPos, 30);
 }
