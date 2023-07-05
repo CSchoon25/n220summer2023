@@ -1,32 +1,30 @@
-let xPos = 0;
-let yPos = 0;
-let xSpeed = 1;
-let ySpeed = 1;
+let xPos;
+let yPos;
+let circleSize = 50
+let score = 0
 
 function setup() {
-    createCanvas(400, 300);
+  createCanvas(400, 400)
+  xPos = 200
+  yPos = 200
 }
 
 function draw() {
-    background(62, 237, 108)
-    xPos = xPos + xSpeed;
-    yPos = yPos + ySpeed;
+  background(191)
+  fill(121, 18, 255)
+  ellipse(xPos, yPos, circleSize, circleSize)
+  
+  textAlign(RIGHT, TOP)
+  textSize(20)
+  text("Score: " + score, width - 10, 10)
+}
 
-    fill(19, 71, 26)
-
-    if(keyIsDown(65)) {
-        xSpeed = -1;
-    }
-    if(keyIsDown(68)) {
-        xSpeed = 1
-    }
-    if(keyIsDown(87)) {
-        ySpeed = -1;
-    }
-    if(keyIsDown(83)) {
-        ySpeed = 1
-    }
-
-
-    circle(xPos, yPos, 30);
+function mouseClicked() {
+  
+  const d = dist(mouseX, mouseY, xPos, yPos)
+  if (d <= circleSize / 2) {
+    xPos = random(width)
+    yPos = random(height)
+    score = score + 1;
+  }
 }
