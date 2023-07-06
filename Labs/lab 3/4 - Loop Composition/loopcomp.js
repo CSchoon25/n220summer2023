@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(600, 600)
-  generateStars()
+  placeStars()
 }
 
 //star array variable
@@ -11,18 +11,6 @@ function draw() {
   background(0)
   makeStars()
 }
-
-//create the random number of stars and random placement
-function generateStars() {
-  var count = random(20, 30)
-  for (var i = 0; i < count; i++) {
-    var xStar = random(width);
-    var yStar = random(height);
-    stars[i]= xStar
-    stars[i] = yStar
-  }
-} 
-
 //make stars
 function makeStars() {
     //yellow
@@ -33,7 +21,18 @@ function makeStars() {
     for (var i = 0; i < stars.length; i++) {
         var xStar = stars[i]
         var yStar = stars[i+1]
-        ellipse(xStar, yStar, 8, 8)
+        circle(xStar, yStar, 8)
   }
   
 }
+
+//create the random number of stars and random placement
+function placeStars() {
+  var count = random(20, 30)
+  for (var i = 0; i < count; i++) {
+    var xStar = random(width);
+    var yStar = random(height);
+    stars[i]= xStar
+    stars[i] = yStar
+  }
+} 
