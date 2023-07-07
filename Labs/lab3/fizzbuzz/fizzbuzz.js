@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(650, 300)
+    createCanvas(700, 300)
   }
   //background
   function draw() {
@@ -12,7 +12,7 @@ function setup() {
     //25 circles
     var size = 20;
     var space = 25;
-    for (var i = 0; i < 25; i++) {
+    for (var i = 1; i < 26; i++) {
       var x = i * space + size
       var y = height/2
 
