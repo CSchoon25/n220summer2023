@@ -1,20 +1,33 @@
+//make an element
+let newEl = document.createElement("div");
 
-let positionsX = [0,0,0,0,0,0,0,0,0,0];
-let positionsY = [0,0,0,0,0,0,0,0,0,0];
+//customize
+newEl.innerHTML = "Testing";
+newEl.style.backgroundColor = "377d4a";
 
-function setup() {
-    createCanvas(400, 300);
-}
+//place the object on the page
+document.body.appendChild(newEl);
 
-function draw() {
 
-    background(50);
+/*let dvCoin = document.getElementById("coin");
 
-    positionsX.push(mouseX);
-    positionsX.shift();
+dvCoin.innerHTML = "tails";
+dvCoin.style.backgroundColor = "EBCF34";
+dvCoin.style.width = "100px";
+dvCoin.style.height = "100px";
 
-    for(var i = 0; i < positionsX.length; i++) {
-        circle(positionsX[i], 150, 20)
+function flipCoin() {
+    let flip = Math.random();
+    let side = "heads";
+    if(flip > .5) {
+        side = "tails";
     }
+    dvCoin.innerHTML = side;
 
+    if(side == "tails") {
+        dvCoin.style.backgroundColor = "EB5634";
+    } else {
+        dvCoin.style.backgroundColor = "EBCF34";
+    }
 }
+*/
