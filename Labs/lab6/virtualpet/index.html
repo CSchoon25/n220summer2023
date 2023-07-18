@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet</title>
+    <!--Center text and objects on screen-->
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .buttonCenter{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Display text-->
+    <div id="foodDisplay" class="center"></div>
+    <div id="playDisplay" class="center"></div>
+    <!--Diplay image-->
+    <div class="center">
+        <img src="dave.png" alt="Dave" width="320" height="180">
+    </div>
+    <!--Create buttons-->
+    <div class="buttonCenter">
+        <button id="feedPet" onclick="feed()">Feed Dave</button>
+        <button id="playPet" onclick="play()">Play With Dave</button>
+    </div>
+    <script src="virtualpet.js"></script>
+</body>
+</html>
