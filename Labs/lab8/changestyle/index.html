@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style</title>
+    <style>
+        /*styles to toggle between*/
+        .red {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+
+        .blue {
+            background-color: blue;
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--First square change-->
+    <button onclick="changeStyleOne()">
+        <div class="red" id="one"></div> 
+    </button> 
+
+    <!--Second square change-->
+    <button onclick="changeStyleTwo()">
+        <div class="red" id="two"></div> 
+    </button> 
+
+    <!--Third square change-->
+    <button onclick="changeStyleThree()">
+        <div class="red" id="three"></div> 
+    </button>
+
+    <script src="changestyle.js"></script>
+</body>
+</html>
