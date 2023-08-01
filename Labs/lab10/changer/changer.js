@@ -1,0 +1,1 @@
+//append to each "data-color" the color. get from html and change so that they are that on click coolio
