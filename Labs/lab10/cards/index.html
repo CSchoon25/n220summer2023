@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Cards</title>
+    <style>
+        /*Format for Cards*/
+        .card {
+            font-size: 20px;
+            background-color: lightgray;
+            border: none;
+            height: 100px;
+            width: 500px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="change()">Question 1?</button>
-    <button onclick="change()">Question 2?</button>
-    <button onclick="change()">Question 3?</button>
+    <!-- Card One -->
+    <button id="cardflip" class="card" data-flip="Indianapolis">What is the capital of Indiana?</button> <br>
+    
+    <!-- Card Two -->
+    <button onclick="change(event)" class="card" data-flip="92">How many counties does Indiana have?</button> <br>
+    
+    <!-- Card Three -->
+    <button onclick="change(event)" class="card" data-flip="1816">What year was Indiana formed?</button>
 
     <script src="cards.js"></script>
 </body>

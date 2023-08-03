@@ -1,1 +1,9 @@
-//append to each "data-color" the color. get from html and change so that they are that on click coolio
+//event handler
+let element = document.getElementById("squares");
+element.addEventListener("click", clicked);
+
+//function to call on
+function clicked(event) {
+    //set background color to attribute color
+    event.target.style.backgroundColor = event.target.dataset.color;
+}

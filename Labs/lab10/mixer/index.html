@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <style>
+        /*Design for Active Color*/
+        .display {
+            width: 500px;
+            height: 200px;
+            background-color: black;
+        }
+
+        /*Design for Current Color Text*/
+        .info {
+            color: gray;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid lightgray;
+            height: 100px;
+            width: 500px;
+            background-color: white;
+        }
+
+        /*Design for Red, Green, and Blue Text*/
+        .text {
+            color: gray;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        /*Design for Buttons*/
+        .funbutton {
+            background-color:lightgray;
+            color: white;
+            border: 0px;
+            font-size: 20px;
+            height: 30px;
+            width: 70px;
+            margin: 10px;
+        }
+
+        /*Puts Buttons in Line*/
+        .line {
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Display-->
+    <div id="colordisplay" class="display"></div>
+    <div id="currentcolor" class="info">Current Color: rgb(0, 0, 0)</div>
+
+    <div class="line">
+        <!--Red-->
+        <div class="text" id="red">Red:</div>
+        <button id="buttons" class="funbutton" data-red="1"> +1 
+        <button id="buttons" class="funbutton" data-red="5"> +5 
+        <button id="buttons" class="funbutton" data-red="10"> +10 
+    </div>
+    <div class="line">
+        <!--Green-->
+        <div class="text">Green:</div>
+        <button id="buttons" class="funbutton" data-green="1"> +1 
+        <button id="buttons" class="funbutton" data-green="5"> +5 
+        <button id="buttons" class="funbutton" data-green="10"> +10 
+    </div>
+    <div class="line">
+        <!--Blue-->
+        <div class="text">Blue:</div>
+        <button id="buttons" class="funbutton" data-blue="1"> +1 
+        <button id="buttons" class="funbutton" data-blue="5"> +5 
+        <button id="buttons" class="funbutton" data-blue="10"> +10    
+                    
+    </div>
+    <script src="mixer.js"></script>
+</body>
+</html>
