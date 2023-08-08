@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <style>
+        .display {
+            font-size: 30px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        .box {
+            padding-bottom: 10px;
+        }
+
+        .screen {
+            text-align: center;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Set CSS Properties-->
+    <div class="screen">
+        <!-- Set CSS Properties-->
+        <div class="display"></div> <br>
+        <div id="alphabet" class="box">
+            <!-- A through Z -->
+            <button class="text" onclick="userGuess(this, 'a')">a</button>
+            <button class="text" onclick="userGuess(this, 'b')">b</button>
+            <button class="text" onclick="userGuess(this, 'c')">c</button>
+            <button class="text" onclick="userGuess(this, 'd')">d</button>
+            <button class="text" onclick="userGuess(this, 'e')">e</button>
+            <button class="text" onclick="userGuess(this, 'f')">f</button> 
+            <button class="text" onclick="userGuess(this, 'g')">g</button> 
+            <button class="text" onclick="userGuess(this, 'h')">h</button> 
+            <button class="text" onclick="userGuess(this, 'i')">i</button>
+            <button class="text" onclick="userGuess(this, 'j')">j</button>
+            <button class="text" onclick="userGuess(this, 'k')">k</button>
+            <button class="text" onclick="userGuess(this, 'l')">l</button>
+            <button class="text" onclick="userGuess(this, 'm')">m</button> <br>
+            <button class="text" onclick="userGuess(this, 'n')">n</button>
+            <button class="text" onclick="userGuess(this, 'o')">o</button>
+            <button class="text" onclick="userGuess(this, 'p')">p</button>
+            <button class="text" onclick="userGuess(this, 'q')">q</button>
+            <button class="text" onclick="userGuess(this, 'r')">r</button>
+            <button class="text" onclick="userGuess(this, 's')">s</button>
+            <button class="text" onclick="userGuess(this, 't')">t</button>
+            <button class="text" onclick="userGuess(this, 'u')">u</button>
+            <button class="text" onclick="userGuess(this, 'v')">v</button>
+            <button class="text" onclick="userGuess(this, 'w')">w</button>
+            <button class="text" onclick="userGuess(this, 'x')">x</button>
+            <button class="text" onclick="userGuess(this, 'y')">y</button>
+            <button class="text" onclick="userGuess(this, 'z')">z</button>
+        </div>
+        <!-- Reset Page -->
+        <button class="text" onclick="reset()">Reset</button>
+    </div>
+
+
+    <script src="../p5.min.js"></script>
+    <script src="final.js"></script>
+</body>
+</html>
